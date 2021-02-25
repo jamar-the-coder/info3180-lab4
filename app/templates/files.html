@@ -1,0 +1,7 @@
+{% block main %}
+{% for image in images %}
+<ul>
+	<img src="{{url_for('get_image', filename=image)}}"></img>
+</ul>
+{% endfor %}
+{% endblock %}
